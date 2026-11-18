@@ -1,0 +1,391 @@
+:root {
+  --bg: #080607;
+  --gold: #eab044;
+  --cream: #ffe4a1;
+  --muted: #b9a996;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #f8eee0;
+  font-family: Georgia, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  height: 74px;
+  position: fixed;
+  z-index: 5;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6vw;
+  background: #080607d9;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eab04422;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand b {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 36px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #cbbba7;
+}
+
+.cta,
+.button {
+  padding: 12px 17px;
+  border: 1px solid var(--gold);
+  color: var(--cream);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  background: #6f3a0f40;
+}
+
+.cta:hover,
+.button:hover {
+  background: var(--gold);
+  color: #201009;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 680px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background:
+    linear-gradient(#08060722, #080607b8),
+    url("assets/mu-maniacos-entrance.png") center / cover;
+}
+
+.hero-inner {
+  max-width: 650px;
+}
+
+.eyebrow,
+.label {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero-logo {
+  width: 145px;
+  margin: 22px;
+  filter: drop-shadow(0 0 22px #eaae46aa);
+}
+
+.kicker {
+  color: var(--cream);
+  font-size: 12px;
+  letter-spacing: 0.4em;
+}
+
+h1 {
+  margin: 17px 0 25px;
+  font-size: clamp(55px, 8vw, 100px);
+  font-weight: 400;
+  line-height: 0.9;
+  text-shadow: 0 4px 25px #000;
+}
+
+em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.hero-inner > p:not(.eyebrow):not(.kicker) {
+  color: #dfcfbb;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.section {
+  width: min(1160px, calc(100% - 40px));
+  margin: auto;
+  padding: 120px 0;
+}
+
+h2 {
+  margin: 12px 0 42px;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  padding: 34px;
+  border: 1px solid #eab04455;
+  box-shadow: 0 20px 70px #0008;
+}
+
+.red {
+  background:
+    radial-gradient(circle at 90% 10%, #a52f2477, transparent 40%),
+    linear-gradient(145deg, #2b1414, #0d0809);
+}
+
+.blue {
+  background:
+    radial-gradient(circle at 90% 10%, #1e70b688, transparent 40%),
+    linear-gradient(145deg, #122438, #080b12);
+}
+
+.tag {
+  padding: 7px;
+  border: 1px solid #eab04455;
+  color: #d4c3aa;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.online {
+  float: right;
+  color: #b7dca5;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.online:first-letter {
+  color: #75da4b;
+}
+
+.card small {
+  position: absolute;
+  top: 61px;
+  right: 25px;
+  color: #fff8;
+  font-size: 130px;
+  line-height: 1;
+}
+
+.card p {
+  margin-top: 92px;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+}
+
+.card h3 {
+  margin: 0;
+  color: var(--cream);
+  font-size: 62px;
+  font-weight: 400;
+}
+
+.card h3 b {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.line {
+  height: 1px;
+  margin: 25px 0 14px;
+  background: #eab04455;
+}
+
+.card ul {
+  padding-left: 18px;
+  color: #c4b29f;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.card li::marker {
+  color: var(--gold);
+}
+
+.card > a {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  border-top: 1px solid #eab04455;
+  color: var(--cream);
+  font-size: 11px;
+  letter-spacing: 0.13em;
+}
+
+.card > a b {
+  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 180px 1fr 270px;
+  gap: 42px;
+  align-items: center;
+  border-top: 1px solid #eab04433;
+  border-bottom: 1px solid #eab04433;
+}
+
+.about > img {
+  width: 150px;
+  filter: drop-shadow(0 0 18px #eab04466);
+}
+
+.about p:not(.label),
+.community > p:not(.label) {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.stats {
+  display: grid;
+  gap: 18px;
+  padding-left: 28px;
+  border-left: 1px solid #eab04444;
+}
+
+.stats b {
+  color: var(--gold);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.stats small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.community {
+  text-align: center;
+}
+
+.community > p {
+  max-width: 510px;
+  margin: 0 auto 30px;
+}
+
+.community a {
+  display: inline-block;
+  margin: 5px;
+  padding: 14px 22px;
+  border: 1px solid #eab04455;
+  color: var(--cream);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 6vw;
+  border-top: 1px solid #eab04422;
+  color: #766b5e;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.toast {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  padding: 15px;
+  border: 1px solid var(--gold);
+  background: #241b13;
+  color: var(--cream);
+  transform: translateY(120px);
+  transition: 0.3s;
+}
+
+.toast.show {
+  transform: translateY(0);
+}
+
+@media (max-width: 760px) {
+  nav {
+    display: none;
+  }
+
+  .grid,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 85px 0;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .about > img {
+    margin: auto;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 0;
+    border: 0;
+    border-top: 1px solid #eab04444;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .card h3 {
+    font-size: 50px;
+  }
+}
