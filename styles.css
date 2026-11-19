@@ -325,13 +325,30 @@ h2 {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   padding: 25px 6vw;
   border-top: 1px solid #eab04422;
   color: #766b5e;
   font-size: 10px;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer strong {
+  color: var(--cream);
+  font-weight: 700;
+}
+
+footer .footer-brand {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 0.15em;
 }
 
 .toast {
