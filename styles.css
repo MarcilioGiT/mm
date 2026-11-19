@@ -97,6 +97,7 @@ nav {
 
 .hero-inner {
   max-width: 650px;
+  transform: translateY(350px);
 }
 
 .eyebrow,
@@ -271,7 +272,7 @@ h2 {
 }
 
 .about > img {
-  width: 150px;
+  width: 115px;
   filter: drop-shadow(0 0 18px #eab04466);
 }
 
