@@ -97,7 +97,7 @@ nav {
 
 .hero-inner {
   max-width: 650px;
-  transform: translateY(350px);
+  transform: translateY(450px);
 }
 
 .eyebrow,
@@ -156,9 +156,15 @@ h2 {
   line-height: 1;
 }
 
+#servidores > .label,
+#servidores > h2 {
+  text-align: center;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 560px);
+  justify-content: center;
   gap: 24px;
 }
 
